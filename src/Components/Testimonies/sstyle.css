@@ -1,5 +1,6 @@
 .testimonies-card {
   width: 385px;
+  height: 600px;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 13px;
   transition: width 1s;
@@ -62,20 +63,29 @@
 /* Hover CSS */
 .testimonies-card:hover {
   /* transform: scale(1.1); */
-  border: 10px solid #e5e5e5;
-  transform: translate(5px, 5px);
+  /* border: 10px solid #e5e5e5; */
+  padding: 0.5rem;
+  /* border-radius: 20px; */
+  transform: translate(5px);
   transition: 0.25s;
   transition-timing-function: ease-in-out;
   /* transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   transition-timing-function: ease-out;
   transition-timing-function: cubic-bezier(0, 0, 0.58, 1); */
-  width: 400px;
+  
 }
 .testimonies-card:hover .profile-image img {
   width: 115px;
   height: 115px;
 }
-
+@media (pointer: coarse) {
+  .testimonies-card:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
 @keyframes example {
   from {
     height: 450px;
